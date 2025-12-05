@@ -1,26 +1,86 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "tailwindcss-animate";
+
+html {
+  scroll-behavior: smooth;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: var(--font-poppins), sans-serif;
+
+  /* Primary: Vibrant Burnt Orange */
+  --color-primary: #F97316;
+
+  /* Backgrounds: Warm Off-White / Warm Black */
+  --color-background-light: #FFF7ED;
+  /* Very subtle orange tint */
+  --color-background-dark: #0C0A09;
+  /* Warm black */
+
+  /* Cards */
+  --color-card-light: #FFFFFF;
+  --color-card-dark: #1C1917;
+
+  /* Text */
+  --color-text-light: #292524;
+  --color-text-dark: #FAFAF9;
+  --color-text-secondary-light: #78716C;
+  --color-text-secondary-dark: #A8A29E;
+
+  /* Borders */
+  --color-border-light: #FFEDD5;
+  --color-border-dark: #44403C;
+
+  --radius-DEFAULT: 0.75rem;
+  /* Rounder corners = Friendlier */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* @theme {
+  --font-display: var(--font-poppins), sans-serif;
+
+  --color-primary: #8B5CF6;
+
+  --color-background-light: #F8F8F8;
+  --color-background-dark: #121212;
+
+  --color-card-light: #FFFFFF;
+  --color-card-dark: #1E1E1E;
+
+  --color-text-light: #454545;
+  --color-text-dark: #E0E0E0;
+
+  --color-text-secondary-light: #757575;
+  --color-text-secondary-dark: #B0B0B0;
+
+  --color-border-light: #E0E0E0;
+  --color-border-dark: #333333;
+
+  --radius-DEFAULT: 0.5rem;
+} */
+
+/* Material Icons support */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v142/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }

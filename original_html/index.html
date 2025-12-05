@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Rayan Adlardard - Front-end Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#FFC107",
+            "background-light": "#F8F8F8",
+            "background-dark": "#121212",
+            "card-light": "#FFFFFF",
+            "card-dark": "#1E1E1E",
+            "text-light": "#454545",
+            "text-dark": "#E0E0E0",
+            "text-secondary-light": "#757575",
+            "text-secondary-dark": "#B0B0B0",
+            "border-light": "#E0E0E0",
+            "border-dark": "#333333",
+          },
+          fontFamily: {
+            display: ["Poppins", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .material-icons {
+      font-feature-settings: 'liga';
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-display">
+  <section>
+    <div class="flex min-h-screen">
+      <aside
+        class="w-20 bg-card-light dark:bg-card-dark flex flex-col items-center py-8 border-r border-border-light dark:border-border-dark">
+        <button
+          class="w-10 h-10 rounded-full flex items-center justify-center bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark text-text-light dark:text-text-dark mb-12">
+          <span class="material-icons text-xl transform -rotate-45">nights_stay</span>
+        </button>
+        <nav class="flex flex-col items-center space-y-6">
+          <a class="relative group" href="#">
+            <div
+              class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-text-light dark:text-text-dark">
+              <span class="material-icons">home</span>
+            </div>
+            <span
+              class="absolute left-full ml-4 px-3 py-1 bg-gray-800 text-white text-xs rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Home</span>
+          </a>
+          <a class="relative group" href="#">
+            <div
+              class="w-12 h-12 rounded-full bg-card-light dark:bg-card-dark flex items-center justify-center text-text-secondary-light dark:text-text-secondary-dark hover:bg-primary/20 transition-colors">
+              <span class="material-icons">person</span>
+            </div>
+            <span
+              class="absolute left-full ml-4 px-3 py-1 bg-gray-800 text-white text-xs rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">About</span>
+          </a>
+          <a class="relative group" href="#">
+            <div
+              class="w-12 h-12 rounded-full bg-card-light dark:bg-card-dark flex items-center justify-center text-text-secondary-light dark:text-text-secondary-dark hover:bg-primary/20 transition-colors">
+              <span class="material-icons">school</span>
+            </div>
+            <span
+              class="absolute left-full ml-4 px-3 py-1 bg-gray-800 text-white text-xs rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Education</span>
+          </a>
+          <a class="relative group" href="#">
+            <div
+              class="w-12 h-12 rounded-full bg-card-light dark:bg-card-dark flex items-center justify-center text-text-secondary-light dark:text-text-secondary-dark hover:bg-primary/20 transition-colors">
+              <span class="material-icons">work</span>
+            </div>
+            <span
+              class="absolute left-full ml-4 px-3 py-1 bg-gray-800 text-white text-xs rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Portfolio</span>
+          </a>
+          <a class="relative group" href="#">
+            <div
+              class="w-12 h-12 rounded-full bg-card-light dark:bg-card-dark flex items-center justify-center text-text-secondary-light dark:text-text-secondary-dark hover:bg-primary/20 transition-colors">
+              <span class="material-icons">article</span>
+            </div>
+            <span
+              class="absolute left-full ml-4 px-3 py-1 bg-gray-800 text-white text-xs rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Blog</span>
+          </a>
+          <a class="relative group" href="#">
+            <div
+              class="w-12 h-12 rounded-full bg-card-light dark:bg-card-dark flex items-center justify-center text-text-secondary-light dark:text-text-secondary-dark hover:bg-primary/20 transition-colors">
+              <span class="material-icons">chat_bubble</span>
+            </div>
+            <span
+              class="absolute left-full ml-4 px-3 py-1 bg-gray-800 text-white text-xs rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Contact</span>
+          </a>
+        </nav>
+      </aside>
+      <main class="flex-1 p-12 overflow-y-auto">
+        <section class="flex items-center justify-between mb-24">
+          <div class="max-w-lg">
+            <h1 class="text-5xl font-bold text-text-light dark:text-text-dark">I'm Rayan Adlrdard</h1>
+            <h2 class="text-5xl font-bold mb-4"><span class="text-primary">Front-end</span> Developer</h2>
+            <p class="text-text-secondary-light dark:text-text-secondary-dark mb-8">
+              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Et, Volutpat Feugiat Placerat Lobortis. Natoque
+              Rutrum Semper Sed Suspendisse Nunc Lectus.
+            </p>
+            <a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-gray-800 font-semibold rounded-lg shadow-md hover:bg-yellow-400 transition-colors"
+              href="#">
+              HIRE ME <span class="material-icons ml-2">arrow_forward</span>
+            </a>
+          </div>
+          <div class="relative">
+            <img alt="Rayan Adlardard, a front-end developer, smiling with arms crossed."
+              class="w-96 h-auto relative z-10"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOG2G7RtyDlIejsbe5fZk9wamq0eiV4mAZ0nxHrKgp9qGNoPqt7T-ikadyI3gnbMt4uIg4DX40GBaFu6W441wnjGpzTShpKlrb4fYxK5NmERcSN71doQyIADBIttnykgYr-990C-S3b053vjDPLRsb_6lgYumHeLnHTQ9thxofw6Ne6h_8jbv7UH3XU3yK4Fi293Qup80BeskjPKwrUGkB3W65gr3pK9afQMzmlmnShzRwIz3q3pEVkgOyXMr_UDhQSidxlh0MFJQ" />
+            <div
+              class="absolute -top-8 -left-8 w-full h-full bg-background-light dark:bg-background-dark border-8 border-border-light dark:border-border-dark rounded-lg z-0">
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-text-light dark:text-text-dark">My Services</h2>
+            <p class="text-text-secondary-light dark:text-text-secondary-dark mt-2 max-w-2xl mx-auto">
+              Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis
+              Enim Velit Mollit. Lorem Ipsum
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div
+              class="bg-card-light dark:bg-card-dark p-8 rounded-lg text-center border border-border-light dark:border-border-dark hover:shadow-lg transition-shadow">
+              <img alt="Web development icon" class="h-16 w-16 mx-auto mb-4"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD96NAEN5dtRnCR-mzh9HJ7erd7aVdMA7G6-5y9OE8s3gEcT7LtR9mJ258BakOUHZMrUKYKOP__DgKP0jg7PUHcXLrO8zmXOE06K5izhhiCfazkT-I7qaBt-1u_Xi30j6NTQtSviz0tDe8F_T0zpq9fJ4PiDNkeelkqQ6zeFTcxoQTzbYLSBczq_sl9sl8iw23AuB3yCNLh1hIf-un-ee7D6VgH-UqMiF9D5Y52dvcaw_lMyOxNMCrIgn74-bGIS5OLWe7SX3vGuoo" />
+              <h3 class="text-xl font-semibold mb-2 text-text-light dark:text-text-dark">Web Development</h3>
+              <p class="text-text-secondary-light dark:text-text-secondary-dark">Blog, E-Commerce</p>
+            </div>
+            <div
+              class="bg-card-light dark:bg-card-dark p-8 rounded-lg text-center border border-border-light dark:border-border-dark hover:shadow-lg transition-shadow">
+              <img alt="UI/UX design icon" class="h-16 w-16 mx-auto mb-4"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhK2r_YQk4A24PTb3z3OiJ7v9fA6BlolID71cGEa1SD8LvUa4gZ-IF_op-FIj9vkaFYxPGcVDwy9UyzNOgT4heeWD42-fkFQpQWXcl2MHmCdd4g_8FwSGA-XnBk7rrlAmV2_F5oT990KFCOjtYo2pNLCyCYISX764RexCqSAQlWbI7-M6ketjpr3-1RlF3m_jvE34smiETnwm7qbStA4ChMSEI3kNA0JFEbmYl3qe2aLLNxZWTtDXwo3xiPttYPhyfhg8--Jh-rUo" />
+              <h3 class="text-xl font-semibold mb-2 text-text-light dark:text-text-dark">UI/UX Design</h3>
+              <p class="text-text-secondary-light dark:text-text-secondary-dark">Mobile App, Website Design</p>
+            </div>
+            <div
+              class="bg-card-light dark:bg-card-dark p-8 rounded-lg text-center border border-border-light dark:border-border-dark hover:shadow-lg transition-shadow">
+              <img alt="Sound design icon" class="h-16 w-16 mx-auto mb-4"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY57wO71DnK6ZwBn8dGeQn5RyOQfj7hMwTH18qjWhm-cobpuMNMaZSITBceKkF2r3Ftnw7gjrFf5Szicjd_ORQZOWFrgW04hd4_cLJ-5ON2pdPXID30WZdjohL5EgzUA2AyepU5Ap6PSR7goreHXGW-ZIvsAtFrxr0mCJWk7u4YSb39nEZ7X1HV9iF4Z1o2wY0Vf7bsUoy6xn3-M_8r-P-Yr0zN6vXkQylNB9F9k3SC7PX7yWws26DieRcvpHqODMtqNLSxRFMu_Y" />
+              <h3 class="text-xl font-semibold mb-2 text-text-light dark:text-text-dark">Sound Design</h3>
+              <p class="text-text-secondary-light dark:text-text-secondary-dark">Voice Over, Beat Making</p>
+            </div>
+            <div
+              class="bg-card-light dark:bg-card-dark p-8 rounded-lg text-center border border-border-light dark:border-border-dark hover:shadow-lg transition-shadow">
+              <img alt="Game design icon" class="h-16 w-16 mx-auto mb-4"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCITsJ1e8daam4WKbmKV3bBCfTrH4ZsvAXDh9GUojL66rjWVfOdFgV2oZjHsjqPGoRP0AJeStfp74pOoXiJvvnU0N8Jek5981ebUFrf8NR_ugJl3qJhptHwBWf1RHiVxqY6MiuG9QEnqv02t88Xh3ZaaXDnVoc2bcfRuWiaZb1Ryzu3Lwlnqzryp-hbSeyFZ63IF9i_q1PN4DZX61vc6NErYFQ8zTNaBy3zO_Fa09LKqDAxQjsI6tNHra2IIyhXe9kK3hPUU6iZ3tg" />
+              <h3 class="text-xl font-semibold mb-2 text-text-light dark:text-text-dark">Game Design</h3>
+              <p class="text-text-secondary-light dark:text-text-secondary-dark">Character Design, Props &amp; Objects
+              </p>
+            </div>
+            <div
+              class="bg-card-light dark:bg-card-dark p-8 rounded-lg text-center border border-border-light dark:border-border-dark hover:shadow-lg transition-shadow">
+              <img alt="Photography icon" class="h-16 w-16 mx-auto mb-4"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAonQ3RMg45_FLDSEfLLFHPQJrO5LYnitY8WOvunMXt8QMBa3Qyynz7UvbFXTxSzCFtUXB37mptouQdmBRTBEOS57xHoTnNPGskzp3tjKgUUTktKcaryrgD9iOsX2nNgTFkHJu53xQrRcrQMV0ctd7nQRg0yWYmyj_a0Jkmvaq9Vp68KfpqoCrQ9hvwzcQz7_pg6laGlKW6zf9Nt1OuSj0d1044qeMGjXiHevI7KJ2VfwZ2JPSL2nwDQrAKJypyJVNEnMyw4knfbaM" />
+              <h3 class="text-xl font-semibold mb-2 text-text-light dark:text-text-dark">Photography</h3>
+              <p class="text-text-secondary-light dark:text-text-secondary-dark">Portrait, Product Photography</p>
+            </div>
+            <div
+              class="bg-card-light dark:bg-card-dark p-8 rounded-lg text-center border border-border-light dark:border-border-dark hover:shadow-lg transition-shadow">
+              <h3 class="text-xl font-semibold mb-2 text-text-light dark:text-text-dark">Advertising</h3>
+              <p class="text-text-secondary-light dark:text-text-secondary-dark mb-4">Lorem Ipsum Dolor Sit Amet,
+                Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi.</p>
+              <a class="text-primary font-semibold text-sm" href="#">ORDER NOW →</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <aside
+        class="w-80 bg-card-light dark:bg-card-dark p-8 border-l border-border-light dark:border-border-dark flex-shrink-0">
+        <div class="text-center">
+          <div class="relative inline-block mb-4">
+            <img alt="Profile picture of Rayan Adlardard" class="h-28 w-28 rounded-full object-cover mx-auto"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHtU46ipcQo_vbJFueC0tUFtUAeCJagwtufLas3cVjC5YTSS8LdFdJdqy25lijskdwXrjJrizDRL-Eb_ldLEe6abI_d5RpXT21hbbD8g8rZHSa4w1sL6XCNOKxJyUF7HLWpUYAecD0e4q9VgHokZSxcO4uKrqMEAiyf7XWTYmID6h6OtsJw5Xpadl9bLXY6ofLlbvXVCmlV556uDD9K6cE4waCFEYvcKzuH5y2zUYp1H6zTT5ZiMLXRyuug_93Q1YDmxKTJY44qgg" />
+            <span
+              class="absolute bottom-2 right-2 block h-4 w-4 rounded-full bg-green-500 border-2 border-card-light dark:border-card-dark"></span>
+          </div>
+          <h3 class="text-xl font-semibold text-text-light dark:text-text-dark">Rayan Adlardard</h3>
+          <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Font-End Developer</p>
+        </div>
+        <div class="flex justify-center space-x-2 my-6">
+          <a class="w-8 h-8 flex items-center justify-center bg-primary/20 text-primary rounded-full hover:bg-primary hover:text-gray-800 transition-colors"
+            href="#">f</a>
+          <a class="w-8 h-8 flex items-center justify-center bg-primary/20 text-primary rounded-full hover:bg-primary hover:text-gray-800 transition-colors"
+            href="#"><img alt="Twitter icon" class="h-4 w-4"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbOYPwtG1YgM5fELzZD13Mr7seBWuf80WrN1jmO4WwvZeUUELkaIkeJ2Mm_mN9ckHlOhQrRuntBqWs2Qxq1XwLkIOMcMxW_qbtaRZG_p-qaO1dLrb5mSk_3zriXS5vOxf1ljQ_namQbplwwbu2YSehbR_G0wY8x5BTOwI0vL7uIVpMZfS2l65UB6jRgqMpR8Kl79joeJLurYX_--HWt2fjHWGlZ8skmplnCEzA-PghfmxB6F194DNKkXSrAGZYnee6HfaQyQbY29g" /></a>
+          <a class="w-8 h-8 flex items-center justify-center bg-primary/20 text-primary rounded-full hover:bg-primary hover:text-gray-800 transition-colors"
+            href="#"><img alt="Instagram icon" class="h-4 w-4"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHJnI_pMqGkdtda4Xx0KsNqwdEZA4kaM6R3orN8zaU6Q5bjMA5-zvKgkxzqen3hFf2AhtTiJQ_YRfDm_BHMU61pKA0QzS7TOCGHV3aGsQFMF-WPwEWcAT0C9YmYvq-4mFHSXygCt486Z1KGgC_QOOovYI8ixX9j2o5Bc4vZkr4HnlO6JcpAJ8IVmGb_QPn7VpWOCT-bLM-TKRqCuRy4-6XmeuN2M5rNNNarkeD950syqzpwsv8Qd6oXnSNweymWgNpdeXwAoNfhro" /></a>
+          <a class="w-8 h-8 flex items-center justify-center bg-primary/20 text-primary rounded-full hover:bg-primary hover:text-gray-800 transition-colors"
+            href="#"><img alt="LinkedIn icon" class="h-4 w-4"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1aU3KvksIeYRqdk3_wITao5WcuACzY0TeW6H08qj-9GAGPcNriF5CTpHxPDliFPHP8MZ6P8l7-3AxiEiSpU-kCrXbAKgUA-kx_t7LEzm67-10YNN0SsWj311YAfQ2lbZLguhnsLiFWt-99yLzCsB1fJS-mKsCx41Fx96x2Dcs1RiHCfFc0qO5Anhd-bdPMgMJkRL2UfmUTy_Iwy3Of-irSpGIvlKBWzh4w7D1JvJu7woeWpJNZTP7smLqfTw34fkkVYoVuPspLFs" /></a>
+          <a class="w-8 h-8 flex items-center justify-center bg-primary/20 text-primary rounded-full hover:bg-primary hover:text-gray-800 transition-colors"
+            href="#"><img alt="YouTube icon" class="h-4 w-4"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtwzNiWL_7Cc6_jEXeU50od09fKXOiEzow-PE-IlTnfx7JhV3MADPuxY118y9LSRJEolcR4wm2eiwROtm9dcVDD1Tud5TqwlXwihAb69KLttxUGjWdSSQXFy3mbAyWScDHKwhliZBV-Q-82rI8N4U78USULHQ0E-d8-tDXQze-3ZwJlbhUuvOrOjRlnd4XuB5QQHFcieZWwIfILHBx2UeWxX8_mMaoFdTMYiqLrUD8jhOXJLI7j8MAS_oN-jn_4jJh3gj-ybRMzao" /></a>
+        </div>
+        <hr class="border-border-light dark:border-border-dark my-6" />
+        <div class="space-y-3 text-sm">
+          <div class="flex justify-between items-center">
+            <span class="bg-primary/20 text-primary px-2 py-1 rounded">Age:</span>
+            <span class="text-text-light dark:text-text-dark">24</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="bg-primary/20 text-primary px-2 py-1 rounded">Residence:</span>
+            <span class="text-text-light dark:text-text-dark">BD</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="bg-primary/20 text-primary px-2 py-1 rounded">Freelance:</span>
+            <span class="text-green-500 font-semibold">Available</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="bg-primary/20 text-primary px-2 py-1 rounded">Address:</span>
+            <span class="text-text-light dark:text-text-dark">Dhaka,Bangladesh</span>
+          </div>
+        </div>
+        <hr class="border-border-light dark:border-border-dark my-6" />
+        <div>
+          <h4 class="text-lg font-semibold mb-4 text-text-light dark:text-text-dark">Languages</h4>
+          <div class="space-y-4 text-sm">
+            <div>
+              <div class="flex justify-between mb-1"><span>Bangla</span><span>100%</span></div>
+              <div class="w-full bg-primary/20 rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 100%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1"><span>English</span><span>80%</span></div>
+              <div class="w-full bg-primary/20 rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 80%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1"><span>Spanish</span><span>60%</span></div>
+              <div class="w-full bg-primary/20 rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-border-light dark:border-border-dark my-6" />
+        <div>
+          <h4 class="text-lg font-semibold mb-4 text-text-light dark:text-text-dark">Skills</h4>
+          <div class="space-y-4 text-sm">
+            <div>
+              <div class="flex justify-between mb-1"><span>Html</span><span>90%</span></div>
+              <div class="w-full bg-primary/20 rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1"><span>CSS</span><span>85%</span></div>
+              <div class="w-full bg-primary/20 rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1"><span>Js</span><span>80%</span></div>
+              <div class="w-full bg-primary/20 rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 80%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1"><span>PHP</span><span>75%</span></div>
+              <div class="w-full bg-primary/20 rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 75%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1"><span>WordPress</span><span>85%</span></div>
+              <div class="w-full bg-primary/20 rounded-full h-1.5">
+                <div class="bg-primary h-1.5 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-border-light dark:border-border-dark my-6" />
+        <div>
+          <h4 class="text-lg font-semibold mb-4 text-text-light dark:text-text-dark">Extra Skills</h4>
+          <ul class="space-y-2 text-sm text-text-secondary-light dark:text-text-secondary-dark">
+            <li class="flex items-center"><span
+                class="material-icons text-primary text-base mr-2">check</span>Bootstrap, Materialize</li>
+            <li class="flex items-center"><span class="material-icons text-primary text-base mr-2">check</span>Stylus,
+              Sass, Less</li>
+            <li class="flex items-center"><span class="material-icons text-primary text-base mr-2">check</span>Gulp,
+              Webpack, Grunt</li>
+            <li class="flex items-center"><span class="material-icons text-primary text-base mr-2">check</span>GIT
+              Knowledge</li>
+          </ul>
+        </div>
+        <button
+          class="w-full mt-8 py-4 bg-primary/20 text-primary font-semibold rounded-lg flex items-center justify-center hover:bg-primary hover:text-gray-800 transition-colors">
+          DOWNLOAD CV
+          <span class="material-icons ml-2">download</span>
+        </button>
+      </aside>
+    </div>
+  </section>
+
+  <section class="bg-background-light dark:bg-background-dark font-display">
+    <div class="min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <header class="text-center mb-16">
+          <h1 class="text-4xl sm:text-5xl font-bold text-gray-800 dark:text-gray-100">Education</h1>
+          <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">
+            Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim
+            Velit Mollit. Lorem Ipsum
+          </p>
+        </header>
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 sm:p-12">
+          <div class="space-y-12">
+            <article class="grid md:grid-cols-3 gap-8 items-start">
+              <div class="md:col-span-1">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-white">University Of Toronto</h2>
+                <div class="flex items-center space-x-4 mt-2">
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Student</span>
+                  <span class="bg-primary text-black text-xs font-semibold px-2.5 py-1 rounded">Jan 2016 - Dec
+                    2021</span>
+                </div>
+              </div>
+              <div class="md:col-span-2">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Certificate Of Web Training</h3>
+                <p class="mt-2 text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Amet Dapibus Nibh Ut Faucibus Nunc, Egestas
+                  Id Amet Porttitor. Pulvinar Quisque Sed Amet, Nulla Nunc. Eleifend Sodales Posuere Fusce Tempus Etiam
+                  Et Pellentesque. Molestie Risus Enim Neque Eget Dui.
+                </p>
+              </div>
+            </article>
+            <hr class="border-gray-200 dark:border-gray-700" />
+            <article class="grid md:grid-cols-3 gap-8 items-start">
+              <div class="md:col-span-1">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-white">Programming Course</h2>
+                <div class="flex items-center space-x-4 mt-2">
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Student</span>
+                  <span class="bg-primary text-black text-xs font-semibold px-2.5 py-1 rounded">Jan 2016 - Dec
+                    2021</span>
+                </div>
+              </div>
+              <div class="md:col-span-2">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Certificate Of Web Training</h3>
+                <p class="mt-2 text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Amet Dapibus Nibh Ut Faucibus Nunc, Egestas
+                  Id Amet Porttitor. Pulvinar Quisque Sed Amet, Nulla Nunc. Eleifend Sodales Posuere Fusce Tempus Etiam
+                  Et Pellentesque. Molestie Risus Enim Neque Eget Dui.
+                </p>
+              </div>
+            </article>
+            <hr class="border-gray-200 dark:border-gray-700" />
+            <article class="grid md:grid-cols-3 gap-8 items-start">
+              <div class="md:col-span-1">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-white">Web Developer Courses</h2>
+                <div class="flex items-center space-x-4 mt-2">
+                  <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Student</span>
+                  <span class="bg-primary text-black text-xs font-semibold px-2.5 py-1 rounded">Jan 2016 - Dec
+                    2021</span>
+                </div>
+              </div>
+              <div class="md:col-span-2">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Certificate Of Web Training</h3>
+                <p class="mt-2 text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Amet Dapibus Nibh Ut Faucibus Nunc, Egestas
+                  Id Amet Porttitor. Pulvinar Quisque Sed Amet, Nulla Nunc. Eleifend Sodales Posuere Fusce Tempus Etiam
+                  Et Pellentesque. Molestie Risus Enim Neque Eget Dui.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="font-display bg-background-light dark:bg-background-dark text-text-light-primary dark:text-text-dark-primary">
+    <div class="container mx-auto px-4 py-16 md:py-24">
+      <header class="text-center mb-12 max-w-2xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Work History</h1>
+        <p class="text-text-light-secondary dark:text-text-dark-secondary text-base">
+          Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim
+          Velit Mollit. Lorem Ipsum
+        </p>
+      </header>
+      <main class="space-y-8">
+        <div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-sm">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-1">
+              <h2 class="text-xl font-semibold mb-2">Lead Web Designer</h2>
+              <div class="flex items-center space-x-4">
+                <span class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Student</span>
+                <span class="bg-primary text-white text-xs font-medium px-3 py-1 rounded-md">Jan 2016 - Dec
+                  2021</span>
+              </div>
+            </div>
+            <div class="md:col-span-2">
+              <h3 class="text-lg font-semibold mb-2">Certificate Of Web Training</h3>
+              <p class="text-text-light-secondary dark:text-text-dark-secondary text-sm leading-relaxed">
+                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Amet Dapibus Nibh Ut Faucibus Nunc, Egestas
+                Id Amet Porttitor. Pulvinar Quisque Sed Amet, Nulla Nunc. Eleifend Sodales Posuere Fusce Tempus Etiam
+                Et Pellentesque. Molestie Risus Enim Neque Eget Dui.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-sm">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-1">
+              <h2 class="text-xl font-semibold mb-2">Junior Web Designer</h2>
+              <div class="flex items-center space-x-4">
+                <span class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Student</span>
+                <span class="bg-primary text-white text-xs font-medium px-3 py-1 rounded-md">Jan 2016 - Dec
+                  2021</span>
+              </div>
+            </div>
+            <div class="md:col-span-2">
+              <h3 class="text-lg font-semibold mb-2">Certificate Of Web Training</h3>
+              <p class="text-text-light-secondary dark:text-text-dark-secondary text-sm leading-relaxed">
+                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Amet Dapibus Nibh Ut Faucibus Nunc, Egestas
+                Id Amet Porttitor. Pulvinar Quisque Sed Amet, Nulla Nunc. Eleifend Sodales Posuere Fusce Tempus Etiam
+                Et Pellentesque. Molestie Risus Enim Neque Eget Dui.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-sm">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="md:col-span-1">
+              <h2 class="text-xl font-semibold mb-2">Senior Web Designer</h2>
+              <div class="flex items-center space-x-4">
+                <span class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Student</span>
+                <span class="bg-primary text-white text-xs font-medium px-3 py-1 rounded-md">Jan 2016 - Dec
+                  2021</span>
+              </div>
+            </div>
+            <div class="md:col-span-2">
+              <h3 class="text-lg font-semibold mb-2">Certificate Of Web Training</h3>
+              <p class="text-text-light-secondary dark:text-text-dark-secondary text-sm leading-relaxed">
+                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Amet Dapibus Nibh Ut Faucibus Nunc, Egestas
+                Id Amet Porttitor. Pulvinar Quisque Sed Amet, Nulla Nunc. Eleifend Sodales Posuere Fusce Tempus Etiam
+                Et Pellentesque. Molestie Risus Enim Neque Eget Dui.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+  </section>
+
+  <section class="bg-background-light dark:bg-background-dark font-display">
+    <div class="container mx-auto px-4 py-16 sm:py-24">
+      <div class="text-center max-w-2xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl font-bold text-gray-800 dark:text-gray-100">
+          Blog
+        </h1>
+        <p class="mt-4 text-base sm:text-lg text-gray-600 dark:text-gray-400">
+          Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim
+          Velit Mollit. Lorem Ipsum
+        </p>
+      </div>
+      <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+          <img alt="Illustration of a website analytics dashboard on a laptop screen with purple background."
+            class="w-full h-56 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDge4vMm03zP8yG6ZF_ve_iUIOlSxOG8wQ5Txj9f9FpcShuWcXF6BGYHqT9xMD70j7CqHTvlieAyQOKO6VNuV2qUMk17ntJDEvxK0MJ6RBLAKYaq0Y0ut4SU6NglIAXaLiVA12fDBeYqIOnI6MBnfOv_XTgRgAbiiG8EiE3EEtCPhuWR6b1fa14v1K0R2j5-c7IeGmYq25Wst7IqFUQdc64FdbQ6WGc0ZMqI_hLsv9kyKPFL58cdt8f6F1Zc6tfqNY0HimgxuZ1Les" />
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-800 dark:text-gray-100">How To Make Web Tempates</h2>
+            <p class="mt-2 text-gray-600 dark:text-gray-400">
+              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna
+            </p>
+            <a class="mt-4 inline-block text-primary font-bold hover:underline" href="#">
+              Learn More ›
+            </a>
+          </div>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+          <img alt="Mockup of two modern business cards with red accents." class="w-full h-56 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuClmp5ZHeR_iB1adfjn3eMXcKF77r4GHZSt7du2W0amIGE5NSFv-S-Uk17xsxqLGhJXCEEzzdsOfhssECZJeGBwT80c8yQS6XdZk-wfLtHQahXAhJlR4ytZ6lOw4hQvzuDMmDSqGkaQxMLwfta8NGXntGfWL7SRAlOlOGRcWaYIKflRN4K_xEG0ubr03KAwNvusu-4Bw7Y2J4lP-cdhUeuKi4KSHV9Wng8CdS8Yw_KYMkRcs5StZzLs7S41qtjoYJmWYKhHRU_eHCA" />
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-800 dark:text-gray-100">Make Business Card</h2>
+            <p class="mt-2 text-gray-600 dark:text-gray-400">
+              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna
+            </p>
+            <a class="mt-4 inline-block text-primary font-bold hover:underline" href="#">
+              Learn More ›
+            </a>
+          </div>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+          <img alt="Mockup of a black and a white letterhead with shadows cast upon them."
+            class="w-full h-56 object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkGPiPUJqgIvN34cXJfrZG_N7P3J1ju-yVi71SdoJfL0PjAP76VtWxZjc5-RCpbmJc19fkkhdneUpymiyexouTLdIXnW99kP8ZajSCdE8RgEUiAZ7txJHu2Yeg53vrLlw_rviDS--eYPJRcmOftYxdVsexp3z9hIZ_fDviCrEItiwV1FJQ6G8Cga48rBMkHeKa8Hx71CvZbl1Pl4fwSG1thzp7weWE_z2sezepXEYqAL4pVpL_ue0fEl7iv8zXkjANuVXDtHgRJA8" />
+          <div class="p-6">
+            <h2 class="text-xl font-bold text-gray-800 dark:text-gray-100">How To Make Flyer Design</h2>
+            <p class="mt-2 text-gray-600 dark:text-gray-400">
+              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae Nulla Diam In Ac Dictum A Urna
+            </p>
+            <a class="mt-4 inline-block text-primary font-bold hover:underline" href="#">
+              Learn More ›
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
+
+    <div class="container mx-auto px-4 py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+        <div>
+          <h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Leave Us Your Info</h2>
+          <div class="bg-white dark:bg-gray-700 p-8 rounded-lg shadow-md">
+            <form action="#" class="space-y-6" method="POST">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="full-name">Your Full
+                  Name ( Required )</label>
+                <input
+                  class="mt-1 block w-full bg-gray-100 dark:bg-gray-600 border-transparent focus:border-gray-500 focus:ring-0 rounded-md py-3 text-gray-900 dark:text-gray-100"
+                  id="full-name" name="full-name" type="text" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="email">Your Email (
+                  Required )</label>
+                <input
+                  class="mt-1 block w-full bg-gray-100 dark:bg-gray-600 border-transparent focus:border-gray-500 focus:ring-0 rounded-md py-3 text-gray-900 dark:text-gray-100"
+                  id="email" name="email" type="email" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="subject">Subject</label>
+                <input
+                  class="mt-1 block w-full bg-gray-100 dark:bg-gray-600 border-transparent focus:border-gray-500 focus:ring-0 rounded-md py-3 text-gray-900 dark:text-gray-100"
+                  id="subject" name="subject" type="text" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="message">Your
+                  Message</label>
+                <textarea
+                  class="mt-1 block w-full bg-gray-100 dark:bg-gray-600 border-transparent focus:border-gray-500 focus:ring-0 rounded-md text-gray-900 dark:text-gray-100"
+                  id="message" name="message" rows="6"></textarea>
+              </div>
+              <div>
+                <button
+                  class="w-auto bg-primary text-black font-bold py-3 px-6 rounded-md hover:bg-amber-600 transition-colors duration-300 text-sm"
+                  type="submit">
+                  SEND MESSAGE
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white">Contact Information</h2>
+          <div class="space-y-6">
+            <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+              <div class="flex justify-center mb-4">
+                <div class="bg-primary h-10 w-10 rounded-full flex items-center justify-center">
+                  <span class="material-icons text-black text-xl">location_on</span>
+                </div>
+              </div>
+              <div class="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+                <div class="flex justify-between">
+                  <span>Country:</span>
+                  <span class="text-right text-gray-800 dark:text-gray-100">Bangladesh</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>City:</span>
+                  <span class="text-right text-gray-800 dark:text-gray-100">Dhaka</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Street:</span>
+                  <span class="text-right text-gray-800 dark:text-gray-100">35 Vhatara, Badda</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+              <div class="flex justify-center mb-4">
+                <div class="bg-primary h-10 w-10 rounded-full flex items-center justify-center">
+                  <span class="material-icons text-black text-xl">email</span>
+                </div>
+              </div>
+              <div class="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+                <div class="flex justify-between">
+                  <span>Email:</span>
+                  <span class="text-right text-gray-800 dark:text-gray-100">Youremail@Gmail.Com</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Skype:</span>
+                  <span class="text-right text-gray-800 dark:text-gray-100">@Yourusername</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Telegram:</span>
+                  <span class="text-right text-gray-800 dark:text-gray-100">@Yourusername</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+              <div class="flex justify-center mb-4">
+                <div class="bg-primary h-10 w-10 rounded-full flex items-center justify-center">
+                  <span class="material-icons text-black text-xl">phone</span>
+                </div>
+              </div>
+              <div class="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+                <div class="flex justify-between">
+                  <span>Support Services:</span>
+                  <span class="text-right text-gray-800 dark:text-gray-100">15369</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Office:</span>
+                  <span class="text-right text-gray-800 dark:text-gray-100">+58 (021)356 587 235</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Personal:</span>
+                  <span class="text-right text-gray-800 dark:text-gray-100">+58 (021)356 587 235</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-gray-100 antialiased">
+    <div class="flex flex-col items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
+      <div class="w-full max-w-5xl">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center mb-2 text-gray-800 dark:text-white">Interactive Location
+          Map</h1>
+        <p class="text-base sm:text-lg text-center text-gray-600 dark:text-gray-400 mb-8">Currently exploring
+          Frankfurt, Germany.</p>
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-2xl overflow-hidden p-2 border border-gray-200 dark:border-gray-700">
+          <div class="aspect-w-16 aspect-h-9">
+            <iframe class="w-full h-full rounded" frameborder="0" height="100%" marginheight="0" marginwidth="0"
+              scrolling="no"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=8.498878479003908%2C50.05266986477546%2C8.866910934448244%2C50.16854199920082&amp;layer=mapnik&amp;marker=50.110924%2C8.682127"
+              style="border: 1px solid black" title="Interactive map of Frankfurt, Germany" width="100%">
+            </iframe>
+          </div>
+        </div>
+        <p class="text-xs text-center text-gray-500 dark:text-gray-500 mt-4">
+          Map data © <a class="text-primary hover:underline"
+            href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors. You can pan and zoom the
+          map.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
