@@ -1,4 +1,4 @@
-# Mahbub's Portfolio
+# Mahbubur Rahman's Portfolio
 
 A modern, high-performance developer portfolio built with **Next.js 16** and **Tailwind CSS 4**. This project showcases my work history, projects, and technical skills with a focus on clean design, smooth animations, and responsiveness.
 
