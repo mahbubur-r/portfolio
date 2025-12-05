@@ -91,7 +91,7 @@ export default function Education() {
                                     <h3 className="text-sm font-semibold text-text-secondary-light dark:text-text-secondary-dark mb-3">
                                         {item.subtitle}
                                     </h3>
-                                    <p className="text-text-secondary-light dark:text-text-secondary-dark text-sm leading-relaxed">
+                                    <p className="text-text-secondary-light text-justify dark:text-text-secondary-dark text-sm leading-relaxed">
                                         {item.description}
                                     </p>
                                 </div>

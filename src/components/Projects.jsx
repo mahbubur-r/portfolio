@@ -58,6 +58,7 @@ const projects = [
             { icon: SiTailwindcss, color: "text-cyan-500" },
             { icon: FaReact, color: "text-cyan-400" },
             { icon: FaNodeJs, color: "text-green-500" },
+            { icon: SiFirebase, color: "text-orange-400" },
         ],
     },
     {
@@ -72,7 +73,8 @@ const projects = [
             { icon: FaReact, color: "text-cyan-400" },
             { icon: SiFirebase, color: "text-orange-400" },
             { icon: SiTailwindcss, color: "text-cyan-500" },
-            { icon: SiRedux, color: "text-purple-600" },
+            // { icon: SiRedux, color: "text-purple-600" },
+            { icon: FaNodeJs, color: "text-green-500" },
         ],
     },
 ];
@@ -159,7 +161,7 @@ export default function Projects() {
                                     <h3 className="text-2xl font-bold text-text-light dark:text-text-dark mb-3">
                                         {project.title}
                                     </h3>
-                                    <p className="text-text-secondary-light dark:text-text-secondary-dark mb-6 flex-1 line-clamp-3">
+                                    <p className="text-text-secondary-light text-justify dark:text-text-secondary-dark mb-6 flex-1 line-clamp-3">
                                         {project.description}
                                     </p>
 

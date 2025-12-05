@@ -32,8 +32,9 @@ export default function Hero() {
                                 strings: [
                                     "Frontend Developer",
                                     "MERN Stack Developer",
+                                    "Next Developer",
+                                    "Junior Full Stack Developer",
                                     "React Developer",
-                                    "Next.js Expert",
                                 ],
                                 autoStart: true,
                                 loop: true,
@@ -43,11 +44,12 @@ export default function Hero() {
                         />
                     </span>
                 </h2>
-                <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0">
-                    AI am a MERN Stack Developer specializing in MongoDB, Express, React, and Node.js. I create full-stack web applications that are fast, responsive, and user-friendly. My focus is on writing clean, maintainable code, implementing modern web technologies, and delivering projects that provide real value to users.
+                <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0 text-justify">
+                    I am a MERN Stack Developer specializing in MongoDB, Express, React, and Node.js. I create full-stack web applications that are fast, responsive, and user-friendly. My focus is on writing clean, maintainable code, implementing modern web technologies, and delivering projects that provide real value to users.
                 </p>
 
-                <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
+
+                <div className="flex flex-col sm:flex-row items-center gap-6 text-justify justify-center lg:justify-start">
                     <a
                         href="#contact"
                         className="px-8 py-4 bg-primary text-white font-bold rounded-full shadow-lg hover:shadow-primary/50 hover:scale-105 transition-all duration-300 flex items-center gap-2"
@@ -74,6 +76,15 @@ export default function Hero() {
                         >
                             <FaLinkedin size={24} />
                         </a>
+                        <a
+                            href="/Mahbubur-Rahman-CV.pdf"
+                            download
+                            className="w-16 h-16 bg-teal-500 text-white rounded-full shadow-lg hover:bg-teal-600 hover:scale-110 transition-all duration-300 flex items-center justify-center"
+                            aria-label="Download CV"
+                        >
+                            <span className="material-icons text-2xl">description</span>
+                        </a>
+
                     </div>
                 </div>
             </motion.div>

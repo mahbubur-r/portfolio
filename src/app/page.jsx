@@ -8,7 +8,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Map from "@/components/Map";
 import TechStack from "@/components/TechStack";
-
+import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
 
 export default function Home() {
@@ -29,6 +29,7 @@ export default function Home() {
           {/* <Blog /> */}
           <Contact />
           <Map />
+          <Footer />
         </main>
 
         <MobileNav />
