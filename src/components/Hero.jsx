@@ -22,7 +22,8 @@ export default function Hero() {
                     Hello, I&apos;m
                 </h3>
                 <h1 className="text-5xl md:text-7xl font-bold text-text-light dark:text-text-dark mb-4 tracking-tight">
-                    Mahbubur <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-pink-500">Rahman</span>
+                    {/* Mahbubur <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-pink-500">Rahman</span> */}
+                    Mahbubur <span className="text-primary">Rahman</span>
                 </h1>
                 <h2 className="text-2xl md:text-4xl font-bold mb-6 text-text-secondary-light dark:text-text-secondary-dark h-16 flex items-center justify-center lg:justify-start">
                     {/* <span className="mr-3">A</span> */}
@@ -32,9 +33,9 @@ export default function Hero() {
                                 strings: [
                                     "Frontend Developer",
                                     "MERN Stack Developer",
-                                    "Next Developer",
-                                    "Junior Full Stack Developer",
+                                    "Next JS Developer",
                                     "React Developer",
+                                    "Junior Full Stack Developer",
                                 ],
                                 autoStart: true,
                                 loop: true,
@@ -45,7 +46,7 @@ export default function Hero() {
                     </span>
                 </h2>
                 <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0 text-justify">
-                    I am a MERN Stack Developer specializing in MongoDB, Express, React, and Node.js. I create full-stack web applications that are fast, responsive, and user-friendly. My focus is on writing clean, maintainable code, implementing modern web technologies, and delivering projects that provide real value to users.
+                    I am an Ambitious Frontend Developer specializing in Javascript, React, Next.js, Node.js. Express, and  MongoDB, I create full-stack web applications that are fast, responsive, and user-friendly. My focus is on writing clean, maintainable code, implementing modern web technologies, and delivering projects that provide real value to users.
                 </p>
 
 
@@ -77,9 +78,9 @@ export default function Hero() {
                             <FaLinkedin size={24} />
                         </a>
                         <a
-                            href="/Mahbubur-Rahman-CV.pdf"
+                            href="https://drive.google.com/file/d/10THuNBo89PWMUysyLDzF5Q22yFoxSuy5/view?usp=drive_link"
                             download
-                            className="w-16 h-16 bg-teal-500 text-white rounded-full shadow-lg hover:bg-teal-600 hover:scale-110 transition-all duration-300 flex items-center justify-center"
+                            className="w-14 h-14 bg-teal-500 text-white rounded-full shadow-lg hover:bg-teal-600 hover:scale-110 transition-all duration-300 flex items-center justify-center"
                             aria-label="Download CV"
                         >
                             <span className="material-icons text-2xl">description</span>

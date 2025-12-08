@@ -28,9 +28,13 @@ export default function Contact() {
 
     return (
         <section
+        
             id="contact"
             className="font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200"
         >
+            <h1 className="text-4xl md:text-5xl font-bold text-center text-text-light dark:text-text-dark mb-6">
+                        Get in<span className="text-primary"> Touch</span>
+                    </h1>
             <div className="container mx-auto px-4 py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
                     <motion.div
@@ -39,7 +43,7 @@ export default function Contact() {
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className="text-4xl font-bold mb-8">Leave Us Your Info</h2>
+                        <h2 className="text-4xl font-bold mb-8">Contact Form</h2>
                         <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div>
@@ -109,7 +113,7 @@ export default function Contact() {
                                     ></textarea>
                                 </div>
                                 <button
-                                    className="w-full bg-primary text-gray-900 font-bold py-3 rounded-md hover:bg-yellow-400 transition-colors"
+                                    className="w-full bg-primary text-gray-900 font-bold py-3 rounded-md hover:bg-teal-500 transition-colors"
                                     type="submit"
                                 >
                                     SEND MESSAGE

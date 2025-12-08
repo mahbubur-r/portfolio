@@ -28,15 +28,18 @@ export default function AboutMe() {
                                 />
                                 <span className="absolute bottom-2 right-2 block h-4 w-4 rounded-full bg-green-500 border-2 border-card-light dark:border-card-dark"></span>
                             </div>
-                            <h3 className="text-xl font-semibold text-text-light dark:text-text-dark">
+                            <h3 className="text-2xl font-semibold text-text-light dark:text-text-dark">
                                 Mahbubur Rahman
                             </h3>
+                            <p className="text-center text-sm mt-0 ">Frankfurt am Main, Germany</p>
                             <div className="text-sm text-primary font-medium h-6 mt-1">
                                 <Typewriter
                                     options={{
                                         strings: [
+                                            "Web Developer",
                                             "Frontend Developer",
                                             "MERN Stack Developer",
+                                            "Next JS Developer",
                                             "React Developer",
                                         ],
                                         autoStart: true,
@@ -45,30 +48,7 @@ export default function AboutMe() {
                                 />
                             </div>
                         </div>
-
-                        <div className="space-y-3 text-sm mb-6">
-                            <div className="flex justify-between items-center">
-                                <span className="bg-primary/20 text-primary px-2 py-1 rounded">
-                                    Residence:
-                                </span>
-                                <span className="text-text-light dark:text-text-dark">Frankfurt am Main, Germany</span>
-                            </div>
-                            {/* <div className="flex justify-between items-center">
-                                <span className="bg-primary/20 text-primary px-2 py-1 rounded">
-                                    City:
-                                </span>
-                                <span className="text-text-light dark:text-text-dark">
-                                    Frankfurt am Main
-                                </span>
-                            </div>
-                            <div className="flex justify-between items-center">
-                                <span className="bg-primary/20 text-primary px-2 py-1 rounded">
-                                    Age:
-                                </span>
-                                <span className="text-text-light dark:text-text-dark">24</span>
-                            </div> */}
-                        </div>
-
+                        
                         <hr className="border-border-light dark:border-border-dark my-6" />
 
                         <div>
@@ -107,12 +87,64 @@ export default function AboutMe() {
 
                         <div>
                             <h4 className="text-lg font-semibold mb-4 text-text-light dark:text-text-dark">
-                                Skills
+                                Tech Skills
                             </h4>
                             <div className="space-y-4 text-sm">
                                 <div>
                                     <div className="flex justify-between mb-1">
-                                        <span>React / Next.js</span>
+                                        <span>JavaScript(ES6+)</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div className="w-full bg-primary/20 rounded-full h-1.5">
+                                        <div
+                                            className="bg-primary h-1.5 rounded-full"
+                                            style={{ width: "80%" }}
+                                        ></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="flex justify-between mb-1">
+                                        <span>React</span>
+                                        <span>75%</span>
+                                    </div>
+                                    <div className="w-full bg-primary/20 rounded-full h-1.5">
+                                        <div
+                                            className="bg-primary h-1.5 rounded-full"
+                                            style={{ width: "75%" }}
+                                        ></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="flex justify-between mb-1">
+                                        <span>Next.js</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div className="w-full bg-primary/20 rounded-full h-1.5">
+                                        <div
+                                            className="bg-primary h-1.5 rounded-full"
+                                            style={{ width: "70%" }}
+                                        ></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="flex justify-between mb-1">
+                                        <span>Node.js</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div className="w-full bg-primary/20 rounded-full h-1.5">
+                                        <div
+                                            className="bg-primary h-1.5 rounded-full"
+                                            style={{ width: "80%" }}
+                                        ></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="flex justify-between mb-1">
+                                        <span>Express.js</span>
                                         <span>70%</span>
                                     </div>
                                     <div className="w-full bg-primary/20 rounded-full h-1.5">
@@ -124,23 +156,34 @@ export default function AboutMe() {
                                 </div>
                                 <div>
                                     <div className="flex justify-between mb-1">
-                                        <span>JavaScript</span>
-                                        <span>80%</span>
+                                        <span>MongoDB</span>
+                                        <span>75%</span>
                                     </div>
                                     <div className="w-full bg-primary/20 rounded-full h-1.5">
                                         <div
                                             className="bg-primary h-1.5 rounded-full"
-                                            style={{ width: "80%" }}
+                                            style={{ width: "75%" }}
+                                        ></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div className="flex justify-between mb-1">
+                                        <span>Tailwind CSS</span>
+                                        <span>95%</span>
+                                    </div>
+                                    <div className="w-full bg-primary/20 rounded-full h-1.5">
+                                        <div
+                                            className="bg-primary h-1.5 rounded-full"
+                                            style={{ width: "95%" }}
                                         ></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="https://drive.google.com/file/d/1l2v5xwjIxUam3DjarXbOD-T4UgoiaNDR/view">
-                            <button className="w-full mt-8 py-3 bg-primary text-gray-900 font-bold rounded-lg hover:bg-yellow-400 transition-colors shadow-md flex items-center justify-center gap-2">
-                                DOWNLOAD CV <span className="material-icons">download</span>
-                            </button>
+                        <a href="https://drive.google.com/file/d/10THuNBo89PWMUysyLDzF5Q22yFoxSuy5/view?usp=sharing" className=" btn w-full mt-8 py-3 text-xl bg-primary text-gray-900 font-bold rounded-lg hover:bg-teal-500 transition-colors shadow-md flex items-center justify-center gap-2">
+                            Resume <span className="material-icons">download</span>
                         </a>
                     </motion.div>
 
@@ -163,7 +206,7 @@ export default function AboutMe() {
                         </p>
                         <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark mb-8 leading-relaxed">
                             My journey in web development is driven by a curiosity to learn and
-                            adapt to new technologies. Whether it's crafting pixel-perfect UIs
+                            adapt to new technologies. Whether it is crafting pixel-perfect UIs
                             or optimizing performance, I am dedicated to delivering high-quality
                             code.
                         </p>
@@ -171,10 +214,10 @@ export default function AboutMe() {
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
                             <div className="bg-white dark:bg-card-dark p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-800 text-center">
                                 <h3 className="text-3xl font-bold text-primary mb-2">
-                                    1
+                                    6
                                 </h3>
                                 <p className="text-text-secondary-light dark:text-text-secondary-dark font-medium">
-                                    Years Experience
+                                    Months Web Bootcamp
                                 </p>
                             </div>
                             <div className="bg-white dark:bg-card-dark p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-800 text-center">
@@ -222,7 +265,7 @@ export default function AboutMe() {
                                 <div className="flex items-start gap-3">
                                     <span className="material-icons text-primary mt-1">check_circle</span>
                                     <div>
-                                        <h4 className="font-semibold">Full Stack Web App</h4>
+                                        <h4 className="font-semibold">Small Full Stack Web App</h4>
                                         <p className="text-sm text-text-secondary-light dark:text-text-secondary-dark">Building full-stack web applications.</p>
                                     </div>
                                 </div>

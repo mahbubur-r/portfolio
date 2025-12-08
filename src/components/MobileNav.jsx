@@ -18,8 +18,12 @@ export default function MobileNav() {
                 <span className="text-xs mt-1">Home</span>
             </a>
             <a href="#projects" className="flex flex-col items-center text-text-secondary-light dark:text-text-secondary-dark hover:text-primary transition-colors">
-                <span className="material-icons">web</span>
+                <span className="material-icons">code</span>
                 <span className="text-xs mt-1">Projects</span>
+            </a>
+            <a href="#tech-stack" className="flex flex-col items-center text-text-secondary-light dark:text-text-secondary-dark hover:text-primary transition-colors">
+                <span className="material-icons">workspaces</span>
+                <span className="text-xs mt-1">Tech Stack</span>
             </a>
             <a href="#education" className="flex flex-col items-center text-text-secondary-light dark:text-text-secondary-dark hover:text-primary transition-colors">
                 <span className="material-icons">school</span>

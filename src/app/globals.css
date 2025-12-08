@@ -10,9 +10,18 @@ html {
 
 @theme {
   --font-display: var(--font-poppins), sans-serif;
-
+  --color-primary: #2dd4bf;  
   /* Primary: Vibrant Burnt Orange */
-  --color-primary: #F97316;
+  /* --color-primary: #F97316; */
+  /* --color-primary: #14b8a6; */
+  /* --color-primary: #2563eb; */
+  /* --color-primary: #2563eb; */
+  /* --color-primary: #b8145f; */
+  /* --color-primary: #b8145f; */
+  /* --color-primary: #2dd4bf; */
+  /* --color-primary: #64748b; */
+  /* --color-primary: #7c3aed; */
+ 
 
   /* Backgrounds: Warm Off-White / Warm Black */
   --color-background-light: #FFF7ED;
