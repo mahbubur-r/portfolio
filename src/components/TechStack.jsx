@@ -15,6 +15,7 @@ import {
 } from "react-icons/fa";
 import {
     SiJavascript,
+    SiTypescript,
     SiC,
     SiCplusplus,
     SiNextdotjs,
@@ -38,9 +39,10 @@ const techCategories = [
     {
         title: "Programming Languages",
         skills: [
-            { name: "JavaScript (ES6+)", icon: SiJavascript, color: "text-yellow-400" },
-            { name: "C", icon: SiC, color: "text-blue-500" },
-            { name: "C++", icon: SiCplusplus, color: "text-blue-600" },
+            { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
+            { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
+            // { name: "C", icon: SiC, color: "text-blue-500" },
+            // { name: "C++", icon: SiCplusplus, color: "text-blue-600" },
         ],
     },
     {
@@ -158,7 +160,7 @@ export default function TechStack() {
                                         whileHover={{ scale: 1.05, y: -5 }}
                                         className="bg-white dark:bg-card-dark p-3 rounded-lg shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-800 flex flex-col items-center justify-center gap-2 transition-all duration-300 group h-24 w-full"
                                     >
-                                        <div className={`text-2xl ${skill.color} group-hover:scale-110 transition-transform duration-300`}>
+                                        <div className={`text-4xl ${skill.color} group-hover:scale-110 transition-transform duration-300`}>
                                             <skill.icon />
                                         </div>
                                         <span className="font-medium text-gray-700 dark:text-gray-200 text-center text-xs leading-tight">

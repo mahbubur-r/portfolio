@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiMongodb, SiExpress, SiFirebase, SiRedux } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiMongodb, SiExpress, SiFirebase, SiRedux, SiJsonwebtokens } from "react-icons/si";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -11,9 +11,27 @@ import "swiper/css/pagination";
 
 const projects = [
     {
+        title: "SwiftBook",
+        description:
+            "Role-based library management system that allows Admins, Librarians, and Users to manage books, users, and orders efficiently. The system manages books adding, updating, deleting, viewing and handles orders, allowing users to place and track their own orders while librarians and admins can view all orders and process for delivery after payment. Integrated JWT authentication for user login, authorization, and security and Integrated Stripe for secure payment processing. Developed backend APIs using Node.js & Express, including full CRUD operations. ",
+        image: "./swiftbook.png",
+        liveLink: "https://swiftbook.web.app/",
+        clientRepo: "https://github.com/mahbubur-r/swiftbook-client",
+        serverRepo: "https://github.com/mahbubur-r/swiftbook-server",
+        techStack: [
+            { icon: FaReact, color: "text-cyan-400" },
+            { icon: SiExpress, color: "text-gray-500 dark:text-gray-300" },
+            { icon: FaNodeJs, color: "text-green-500" },
+            { icon: SiJsonwebtokens, color: "text-purple-600"},
+            { icon: SiFirebase, color: "text-orange-400" },
+            { icon: SiTailwindcss, color: "text-cyan-500" },
+            { icon: SiMongodb, color: "text-green-600" },
+        ],
+    },
+    {
         title: "Mentora Academy",
         description:
-            "Mentora Academy is a full-stack online learning platform designed for both learners and instructors.Learners can browse courses, enroll and manage their learning.Instructors can create, update, and delete courses, and manage student enrollments. All course data, user enrolled, and instructor activities are stored in MongoDB, making the platform dynamic and scalable.",
+            "Mentora Academy is a full-stack Online Learning Platform designed for both learners and instructors.Learners can browse courses, enroll and manage their learning. Instructors can create, update, and delete courses, and manage student enrollments. All course data, user enrolled, and instructor activities are stored in MongoDB, making the platform dynamic and scalable.",
         image: "./mentora.png",
         liveLink: "https://mentora-academy.netlify.app/",
         clientRepo: "https://github.com/mahbubur-r/mentora-academy-client",

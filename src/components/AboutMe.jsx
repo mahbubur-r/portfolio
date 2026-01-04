@@ -32,15 +32,16 @@ export default function AboutMe() {
                                 Mahbubur Rahman
                             </h3>
                             <p className="text-center text-sm mt-0 ">Frankfurt am Main, Germany</p>
-                            <div className="text-sm text-primary font-medium h-6 mt-1">
+                            <div className="text-sm text-primary font-bold h-6 mt-1">
                                 <Typewriter
                                     options={{
                                         strings: [
-                                            "Web Developer",
                                             "Frontend Developer",
+                                            "Junior Full Stack Developer",
                                             "MERN Stack Developer",
                                             "Next JS Developer",
                                             "React Developer",
+                                            "Web Developer",
                                         ],
                                         autoStart: true,
                                         loop: true,
@@ -48,7 +49,7 @@ export default function AboutMe() {
                                 />
                             </div>
                         </div>
-                        
+
                         <hr className="border-border-light dark:border-border-dark my-6" />
 
                         <div>
@@ -71,7 +72,7 @@ export default function AboutMe() {
                                 <div >
                                     <div className="flex justify-between mb-1">
                                         <span>English</span>
-                                        <span>B2</span>
+                                        <span>C1</span>
                                     </div>
                                     <div className="w-full bg-primary/20 rounded-full h-1.5">
                                         <div
@@ -90,6 +91,18 @@ export default function AboutMe() {
                                 Tech Skills
                             </h4>
                             <div className="space-y-4 text-sm">
+                                <div>
+                                    <div className="flex justify-between mb-1">
+                                        <span>Typescript</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div className="w-full bg-primary/20 rounded-full h-1.5">
+                                        <div
+                                            className="bg-primary h-1.5 rounded-full"
+                                            style={{ width: "70%" }}
+                                        ></div>
+                                    </div>
+                                </div>
                                 <div>
                                     <div className="flex justify-between mb-1">
                                         <span>JavaScript(ES6+)</span>
@@ -182,8 +195,8 @@ export default function AboutMe() {
                             </div>
                         </div>
 
-                        <a href="https://drive.google.com/file/d/10THuNBo89PWMUysyLDzF5Q22yFoxSuy5/view?usp=sharing" className=" btn w-full mt-8 py-3 text-xl bg-primary text-gray-900 font-bold rounded-lg hover:bg-teal-500 transition-colors shadow-md flex items-center justify-center gap-2">
-                            Resume <span className="material-icons">download</span>
+                        <a href="https://drive.google.com/file/d/10THuNBo89PWMUysyLDzF5Q22yFoxSuy5/view?usp=sharing" className="btn w-full mt-8 py-3 text-xl bg-primary text-white font-bold rounded-lg hover:scale-105 transition-all duration-300 items-center gap-2 shadow-md flex  justify-center">
+                            RESUME <span className="material-icons">download</span>
                         </a>
                     </motion.div>
 
@@ -198,13 +211,13 @@ export default function AboutMe() {
                         <h2 className="text-4xl font-bold text-text-light dark:text-text-dark mb-6">
                             About <span className="text-primary">Me</span>
                         </h2>
-                        <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark mb-6 leading-relaxed">
+                        <p className="text-lg text-black-light dark:text-white-dark mb-6 leading-relaxed">
                             I am a passionate Front-end Developer with a strong foundation in
                             building responsive and user-friendly web applications. With expertise
                             in modern JavaScript frameworks like React and Next.js, I strive to
                             create seamless digital experiences that solve real-world problems.
                         </p>
-                        <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark mb-8 leading-relaxed">
+                        <p className="text-lg text-black-light dark:text-white-dark mb-8 leading-relaxed">
                             My journey in web development is driven by a curiosity to learn and
                             adapt to new technologies. Whether it is crafting pixel-perfect UIs
                             or optimizing performance, I am dedicated to delivering high-quality
@@ -214,7 +227,7 @@ export default function AboutMe() {
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
                             <div className="bg-white dark:bg-card-dark p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-800 text-center">
                                 <h3 className="text-3xl font-bold text-primary mb-2">
-                                    6
+                                    6+
                                 </h3>
                                 <p className="text-text-secondary-light dark:text-text-secondary-dark font-medium">
                                     Months Web Bootcamp

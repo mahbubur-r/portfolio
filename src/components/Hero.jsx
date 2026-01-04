@@ -45,7 +45,7 @@ export default function Hero() {
                         />
                     </span>
                 </h2>
-                <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0 text-justify">
+                <p className="text-lg text-black-light dark:text-white-dark mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0 text-justify">
                     I am an Ambitious Frontend Developer specializing in Javascript, React, Next.js, Node.js. Express, and  MongoDB, I create full-stack web applications that are fast, responsive, and user-friendly. My focus is on writing clean, maintainable code, implementing modern web technologies, and delivering projects that provide real value to users.
                 </p>
 
@@ -60,15 +60,6 @@ export default function Hero() {
 
                     <div className="flex items-center gap-4">
                         <a
-                            href="https://github.com/mahbubur-r"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-4 bg-gray-900 text-white rounded-full shadow-lg hover:bg-gray-800 hover:scale-110 transition-all duration-300 border border-gray-700"
-                            aria-label="GitHub Profile"
-                        >
-                            <FaGithub size={24} />
-                        </a>
-                        <a
                             href="https://www.linkedin.com/in/mahbubur-r/"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -78,13 +69,37 @@ export default function Hero() {
                             <FaLinkedin size={24} />
                         </a>
                         <a
-                            href="https://drive.google.com/file/d/10THuNBo89PWMUysyLDzF5Q22yFoxSuy5/view?usp=drive_link"
-                            download
-                            className="w-14 h-14 bg-teal-500 text-white rounded-full shadow-lg hover:bg-teal-600 hover:scale-110 transition-all duration-300 flex items-center justify-center"
-                            aria-label="Download CV"
+                            href="https://github.com/mahbubur-r"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-4 bg-gray-900 text-white rounded-full shadow-lg hover:bg-gray-800 hover:scale-110 transition-all duration-300 border border-gray-700"
+                            aria-label="GitHub Profile"
                         >
-                            <span className="material-icons text-2xl">description</span>
+                            <FaGithub size={22} />
                         </a>
+                        <div className="relative group">
+                            <a
+                                href="https://drive.google.com/file/d/10THuNBo89PWMUysyLDzF5Q22yFoxSuy5/view?usp=drive_link"
+                                download
+                                className="w-14 h-14 bg-teal-500 text-white rounded-full shadow-lg 
+               hover:bg-teal-600 hover:scale-110 transition-all duration-300 
+               flex items-center justify-center"
+                                aria-label="Download CV"
+                            >
+                                <span className="material-icons text-2xl">description</span>
+                            </a>
+
+                            {/* Hover Text */}
+                            <span
+                                className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2
+               px-3 py-1 text-sm text-white bg-black rounded-md
+               opacity-0 group-hover:opacity-100
+               transition-opacity duration-300 whitespace-nowrap"
+                            >
+                                Resume
+                            </span>
+                        </div>
+
 
                     </div>
                 </div>

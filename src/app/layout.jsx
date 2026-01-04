@@ -12,6 +12,9 @@ const poppins = Poppins({
 export const metadata = {
   title: "Mahbubur Rahman",
   description: "Portfolio of Mahbubur Rahman",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
