@@ -251,7 +251,7 @@ export default function AboutMe() {
                             </div>
                         </div>
 
-                        <div className="bg-white dark:bg-card-dark p-8 rounded-lg shadow-md border border-gray-100 dark:border-gray-800">
+                        {/* <div className="bg-white dark:bg-card-dark p-8 rounded-lg shadow-md border border-gray-100 dark:border-gray-800">
                             <h3 className="text-xl font-bold mb-4">What I Do</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div className="flex items-start gap-3">
@@ -280,6 +280,61 @@ export default function AboutMe() {
                                     <div>
                                         <h4 className="font-semibold">Small Full Stack Web App</h4>
                                         <p className="text-sm text-text-secondary-light dark:text-text-secondary-dark">Building full-stack web applications.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> */}
+
+                        {/* My Journey Section */}
+                        <div className="bg-white dark:bg-card-dark p-8 rounded-lg shadow-md border border-gray-100 dark:border-gray-800 mt-8">
+                            <h3 className="text-xl font-bold mb-6">My Journey & Interests</h3>
+
+                            <div className="space-y-6">
+                                <div className="flex gap-4">
+                                    <div className="bg-primary/10 p-3 rounded-full h-fit">
+                                        <span className="material-icons text-primary">code</span>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-lg mb-2">Programming Journey</h4>
+                                        <p className="text-text-secondary-light dark:text-text-secondary-dark leading-relaxed text-justify">
+                                            My coding adventure started with a spark of curiosity for how the web works. That curiosity led me to an intensive 6-month web development bootcamp where I dove deep into the MERN stack. From building simple static pages to complex full-stack applications like <strong>SwiftBook</strong> and <strong>Mentora Academy</strong>, I&apos;ve fallen in love with the process of turning ideas into functional, interactive reality.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex gap-4">
+                                    <div className="bg-primary/10 p-3 rounded-full h-fit">
+                                        <span className="material-icons text-primary">terminal</span>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-lg mb-2">The Work I Enjoy</h4>
+                                        <p className="text-text-secondary-light dark:text-text-secondary-dark leading-relaxed text-justify">
+                                            I thrive on building scalable, user-centric web applications. I love solving logic puzzles in the backend with <strong>Node.js</strong> as much as I enjoy crafting pixel-perfect, responsive interfaces with <strong>React</strong> and <strong>Tailwind CSS</strong>. Clean code, performance optimization, and creating seamless user experiences are what drive me every day.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex gap-4">
+                                    <div className="bg-primary/10 p-3 rounded-full h-fit">
+                                        <span className="material-icons text-primary">sports_esports</span>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-lg mb-2">Beyond the Screen</h4>
+                                        <p className="text-text-secondary-light dark:text-text-secondary-dark leading-relaxed text-justify">
+                                            When I&apos;m not coding, you&apos;ll likely find me immersed in the world of <strong>Gaming</strong> (exploring immersive narratives or competitive strategy), which fuels my appreciation for interactive design. I&apos;m also an avid traveler, always eager to explore new cities and cultures, finding inspiration in the diversity of the world around me.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex gap-4">
+                                    <div className="bg-primary/10 p-3 rounded-full h-fit">
+                                        <span className="material-icons text-primary">psychology</span>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-lg mb-2">My Personality</h4>
+                                        <p className="text-text-secondary-light dark:text-text-secondary-dark leading-relaxed text-justify">
+                                            I&apos;m a detail-oriented problem solver and a lifelong learner. I believe there&apos;s always something new to discover in technology. I&apos;m a collaborative team player who values open communication and believes that the best solutions come from working together. I approach every challenge with optimization and creativity in mind.
+                                        </p>
                                     </div>
                                 </div>
                             </div>

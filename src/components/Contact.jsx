@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -28,13 +29,12 @@ export default function Contact() {
 
     return (
         <section
-        
             id="contact"
             className="font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200"
         >
             <h1 className="text-4xl md:text-5xl font-bold text-center text-text-light dark:text-text-dark mb-6">
-                        Get in<span className="text-primary"> Touch</span>
-                    </h1>
+                Get in<span className="text-primary"> Touch</span>
+            </h1>
             <div className="container mx-auto px-4 py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
                     <motion.div
@@ -130,42 +130,87 @@ export default function Contact() {
                         <h2 className="text-4xl font-bold mb-8">Contact Information</h2>
                         <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg space-y-8">
                             <div className="flex items-start gap-4">
-                                <div className="bg-primary p-3 rounded-full text-gray-900">
-                                    <span className="material-icons">location_on</span>
+                                <div className="bg-primary p-3 rounded-full text-gray-900 shadow-md">
+                                    <FaMapMarkerAlt className="text-2xl" />
                                 </div>
                                 <div>
                                     <div>
-                                        <h3 className="text-lg font-bold mb-1">Country:</h3>
-                                        <p className="text-gray-600 dark:text-gray-400">Germany</p>
-                                        <h3 className="text-lg font-bold mt-4 mb-1">City:</h3>
-                                        <p className="text-gray-600 dark:text-gray-400"> Frankfurt am Main</p>
-                                        <h3 className="text-lg font-bold mt-4 mb-1">Street:</h3>
-                                        <p className="text-gray-600 dark:text-gray-400"> Adam Opel Straße 24</p>
+                                        <h3 className="text-lg font-bold mb-1">Address:</h3>
+                                        <p className="text-gray-600 dark:text-gray-400">Adam Opel Straße 24</p>
+                                        <p className="text-gray-600 dark:text-gray-400">Frankfurt am Main, Germany</p>
                                     </div>
                                 </div>
                             </div>
+
+                            <hr className="border-gray-200 dark:border-gray-700" />
+
                             <div className="flex items-start gap-4">
-                                <div className="bg-primary p-3 rounded-full text-gray-900">
-                                    <span className="material-icons">email</span>
+                                <div className="bg-primary p-3 rounded-full text-gray-900 shadow-md">
+                                    <FaEnvelope className="text-2xl" />
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-bold mb-1">Email:</h3>
-                                    <p className="text-gray-600 dark:text-gray-400">
+                                    <a
+                                        href="mailto:mahbubur-r@outlook.com"
+                                        className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors text-lg"
+                                    >
                                         mahbubur-r@outlook.com
-                                    </p>
-                                    <h3 className="text-lg font-bold mt-4 mb-1">LinkedIn:</h3>
-                                    <p className="text-gray-600 dark:text-gray-400">@mahbubur-r</p>
-                                    <h3 className="text-lg font-bold mt-4 mb-1">Github:</h3>
-                                    <p className="text-gray-600 dark:text-gray-400">@mahbubur-r</p>
+                                    </a>
                                 </div>
                             </div>
+
+                            <hr className="border-gray-200 dark:border-gray-700" />
+
                             <div className="flex items-start gap-4">
-                                <div className="bg-primary p-3 rounded-full text-gray-900">
-                                    <span className="material-icons">smartphone</span>
+                                <div className="bg-primary p-3 rounded-full text-gray-900 shadow-md">
+                                    <FaPhoneAlt className="text-2xl" />
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-bold mb-1">Mobile:</h3>
-                                    <p className="text-gray-600 dark:text-gray-400">+49 15753362954</p>
+                                    <a
+                                        href="tel:+4915753362954"
+                                        className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors text-lg"
+                                    >
+                                        +49 15753362954
+                                    </a>
+                                </div>
+                            </div>
+
+                            <hr className="border-gray-200 dark:border-gray-700" />
+
+                            <div className="flex items-start gap-4">
+                                <div className="bg-primary p-3 rounded-full text-gray-900 shadow-md">
+                                    <FaLinkedin className="text-2xl" />
+                                </div>
+                                <div>
+                                    <h3 className="text-lg font-bold mb-1">LinkedIn:</h3>
+                                    <a
+                                        href="https://linkedin.com/in/mahbubur-r"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors text-lg"
+                                    >
+                                        /in/mahbubur-r
+                                    </a>
+                                </div>
+                            </div>
+
+                            <hr className="border-gray-200 dark:border-gray-700" />
+
+                            <div className="flex items-start gap-4">
+                                <div className="bg-primary p-3 rounded-full text-gray-900 shadow-md">
+                                    <FaGithub className="text-2xl" />
+                                </div>
+                                <div>
+                                    <h3 className="text-lg font-bold mb-1">GitHub:</h3>
+                                    <a
+                                        href="https://github.com/mahbubur-r"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors text-lg"
+                                    >
+                                        @mahbubur-r
+                                    </a>
                                 </div>
                             </div>
                         </div>
