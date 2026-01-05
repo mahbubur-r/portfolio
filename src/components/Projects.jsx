@@ -1,101 +1,17 @@
 "use client";
 
+
+
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiMongodb, SiExpress, SiFirebase, SiRedux, SiJsonwebtokens } from "react-icons/si";
+import Link from "next/link";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-
-const projects = [
-    {
-        title: "SwiftBook",
-        description:
-            "Role-based library management system that allows Admins, Librarians, and Users to manage books, users, and orders efficiently. The system manages books adding, updating, deleting, viewing and handles orders, allowing users to place and track their own orders while librarians and admins can view all orders and process for delivery after payment. Integrated JWT authentication for user login, authorization, and security and Integrated Stripe for secure payment processing. Developed backend APIs using Node.js & Express, including full CRUD operations. ",
-        image: "./swiftbook.png",
-        liveLink: "https://swiftbook.web.app/",
-        clientRepo: "https://github.com/mahbubur-r/swiftbook-client",
-        serverRepo: "https://github.com/mahbubur-r/swiftbook-server",
-        techStack: [
-            { icon: FaReact, color: "text-cyan-400" },
-            { icon: SiExpress, color: "text-gray-500 dark:text-gray-300" },
-            { icon: FaNodeJs, color: "text-green-500" },
-            { icon: SiJsonwebtokens, color: "text-purple-600"},
-            { icon: SiFirebase, color: "text-orange-400" },
-            { icon: SiTailwindcss, color: "text-cyan-500" },
-            { icon: SiMongodb, color: "text-green-600" },
-        ],
-    },
-    {
-        title: "Mentora Academy",
-        description:
-            "Mentora Academy is a full-stack Online Learning Platform designed for both learners and instructors.Learners can browse courses, enroll and manage their learning. Instructors can create, update, and delete courses, and manage student enrollments. All course data, user enrolled, and instructor activities are stored in MongoDB, making the platform dynamic and scalable.",
-        image: "./mentora.png",
-        liveLink: "https://mentora-academy.netlify.app/",
-        clientRepo: "https://github.com/mahbubur-r/mentora-academy-client",
-        serverRepo: "https://github.com/mahbubur-r/mentora-academy-server",
-        techStack: [
-            { icon: FaReact, color: "text-cyan-400" },
-            { icon: SiExpress, color: "text-gray-500 dark:text-gray-300" },
-            { icon: FaNodeJs, color: "text-green-500" },
-            { icon: SiFirebase, color: "text-orange-400" },
-            { icon: SiTailwindcss, color: "text-cyan-500" },
-            { icon: SiMongodb, color: "text-green-600" },
-        ],
-    },
-    {
-        title: "TechMart",
-        description:
-            "An analytics dashboard for social media accounts, providing insights into engagement, follower growth, and content performance with interactive charts.",
-        image: "./tech2mart.png",
-        liveLink: "https://tech2mart.vercel.app/",
-        clientRepo: "https://github.com/mahbubur-r/techmart-client",
-        serverRepo: "https://github.com/mahbubur-r/techmart-server",
-        techStack: [
-            { icon: SiNextdotjs, color: "text-black dark:text-white" },
-            { icon: FaReact, color: "text-cyan-400" },
-            { icon: SiExpress, color: "text-gray-500 dark:text-gray-300" },
-            { icon: FaNodeJs, color: "text-green-500" },
-            { icon: SiFirebase, color: "text-orange-400" },
-            { icon: SiTailwindcss, color: "text-cyan-500" },
-        ],
-    }
-    ,
-    {
-        title: "Portfolio Website",
-        description:
-            "A modern, responsive portfolio website showcasing skills, projects, and experience. Built with Next.js and Framer Motion for smooth animations.",
-        image: "./portfolio.png",
-        liveLink: "https://mahbubur.web.app/",
-        clientRepo: "https://github.com/mahbubur-r/portfolio",
-        // serverRepo: "#",
-        techStack: [
-            { icon: SiNextdotjs, color: "text-black dark:text-white" },
-            { icon: SiTailwindcss, color: "text-cyan-500" },
-            { icon: FaReact, color: "text-cyan-400" },
-            { icon: FaNodeJs, color: "text-green-500" },
-            { icon: SiFirebase, color: "text-orange-400" },
-        ],
-    },
-    {
-        title: "Gaming Infinity",
-        description:
-            "Gaming Infinity is a modern web application designed to showcase and distribute innovative gaming apps. Our platform provides users with a seamless, exciting, and immersive experience — turning bold ideas into unforgettable digital gaming journeys.",
-        image: "./gaming-infinity.png",
-        liveLink: "https://gaming-infinity.netlify.app/",
-        clientRepo: "https://github.com/mahbubur-r/gaming-infinity",
-        // serverRepo: "https://github.com/mahbubur-r/gaming-infinity",
-        techStack: [
-            { icon: FaReact, color: "text-cyan-400" },
-            { icon: SiFirebase, color: "text-orange-400" },
-            { icon: SiTailwindcss, color: "text-cyan-500" },
-            // { icon: SiRedux, color: "text-purple-600" },
-            { icon: FaNodeJs, color: "text-green-500" },
-        ],
-    },
-];
+import { projects } from "@/data/projects";
+import { iconMap } from "@/utils/iconMap";
 
 export default function Projects() {
     return (
@@ -183,12 +99,10 @@ export default function Projects() {
                                         {project.description}
                                     </p>
 
-                                    <div className="flex flex-wrap gap-4 mb-6">
-                                        <a href={project.liveLink} className="text-primary hover:underline text-sm font-semibold">Live Demo</a>
-                                        <a href={project.clientRepo} className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary text-sm font-semibold">Client Repo</a>
-                                        {project.serverRepo !== "#" && (
-                                            <a href={project.serverRepo} className="text-text-secondary-light dark:text-text-secondary-dark hover:text-primary text-sm font-semibold">Server Repo</a>
-                                        )}
+                                    <div className="mb-6">
+                                        <Link href={`/projects/${project.id}`} className="w-full block text-center py-2 px-4 bg-primary text-gray-900 font-bold rounded-lg hover:bg-opacity-90 transition-all duration-300">
+                                            View More / Details
+                                        </Link>
                                     </div>
 
                                     <div className="border-t border-gray-100 dark:border-gray-700 pt-4 mt-auto">
@@ -196,11 +110,14 @@ export default function Projects() {
                                             Tech Stack
                                         </h4>
                                         <div className="flex flex-wrap gap-3">
-                                            {project.techStack.map((tech, idx) => (
-                                                <div key={idx} className={`text-xl ${tech.color}`} title={tech.icon.name}>
-                                                    <tech.icon />
-                                                </div>
-                                            ))}
+                                            {project.techStack.map((tech, idx) => {
+                                                const Icon = iconMap[tech.iconName];
+                                                return (
+                                                    <div key={idx} className={`text-xl ${tech.color}`} title={tech.iconName.replace(/^(Fa|Si)/, '')}>
+                                                        {Icon && <Icon />}
+                                                    </div>
+                                                );
+                                            })}
                                         </div>
                                     </div>
                                 </div>
