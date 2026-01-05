@@ -99,7 +99,7 @@ export default function ProjectDetailsClient({ project }) {
                             >
                                 <FaGithub /> Client Repo
                             </a>
-                            {project.serverRepo !== "#" && (
+                            {/* {project.serverRepo !== "#" && (
                                 <a
                                     href={project.serverRepo}
                                     target="_blank"
@@ -108,7 +108,7 @@ export default function ProjectDetailsClient({ project }) {
                                 >
                                     <FaGithub /> Server Repo
                                 </a>
-                            )}
+                            )} */}
                         </div>
                     </div>
                 </motion.div>

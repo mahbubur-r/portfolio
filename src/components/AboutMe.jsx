@@ -3,8 +3,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
+import { useState } from "react";
+import ResumeModal from "./ResumeModal";
 
 export default function AboutMe() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
         <section id="about" className="py-20 bg-background-light dark:bg-background-dark">
             <div className="container mx-auto px-4">
@@ -192,12 +196,41 @@ export default function AboutMe() {
                                         ></div>
                                     </div>
                                 </div>
+
+                                <div>
+                                    <div className="flex justify-between mb-1">
+                                        <span>HTML</span>
+                                        <span>95%</span>
+                                    </div>
+                                    <div className="w-full bg-primary/20 rounded-full h-1.5">
+                                        <div
+                                            className="bg-primary h-1.5 rounded-full"
+                                            style={{ width: "95%" }}
+                                        ></div>
+                                    </div>
+
+                                    <div>
+                                        <div className="flex justify-between mt-3 mb-1">
+                                            <span>CSS</span>
+                                            <span>95%</span>
+                                        </div>
+                                        <div className="w-full bg-primary/20 rounded-full h-1.5">
+                                            <div
+                                                className="bg-primary h-1.5 rounded-full"
+                                                style={{ width: "95%" }}
+                                            ></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <a href="https://drive.google.com/file/d/10THuNBo89PWMUysyLDzF5Q22yFoxSuy5/view?usp=sharing" className="btn w-full mt-8 py-3 text-xl bg-primary text-white font-bold rounded-lg hover:scale-105 transition-all duration-300 items-center gap-2 shadow-md flex  justify-center">
+                        <button
+                            onClick={() => setIsModalOpen(true)}
+                            className="btn w-full mt-8 py-3 text-xl bg-primary text-white font-bold rounded-lg hover:scale-105 transition-all duration-300 items-center gap-2 shadow-md flex  justify-center"
+                        >
                             RESUME <span className="material-icons">download</span>
-                        </a>
+                        </button>
                     </motion.div>
 
                     {/* About Content */}
@@ -342,6 +375,7 @@ export default function AboutMe() {
                     </motion.div>
                 </div>
             </div>
+            <ResumeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </section>
     );
 }

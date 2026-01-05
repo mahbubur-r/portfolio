@@ -4,10 +4,14 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useState } from "react";
+import ResumeModal from "./ResumeModal";
 
 export default function Hero() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
-        <section id="home" className="flex flex-col lg:flex-row items-center justify-between py-20 lg:py-32 px-8 lg:px-16 gap-12 lg:gap-0 relative overflow-hidden rounded-[3rem]">
+        <section id="home" className="flex flex-col lg:flex-row items-center justify-between py-20 lg:py-32 px-8 lg:py-16 gap-12 lg:gap-0 relative overflow-hidden rounded-[3rem]">
             {/* Background Elements */}
             <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] -z-10 animate-pulse"></div>
             <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] -z-10 animate-pulse"></div>
@@ -59,6 +63,13 @@ export default function Hero() {
                     </a>
 
                     <div className="flex items-center gap-4">
+                        <button
+                            onClick={() => setIsModalOpen(true)}
+                            className="px-6 py-4 bg-teal-500 text-white font-bold rounded-full shadow-lg hover:bg-teal-600 hover:scale-105 transition-all duration-300 flex items-center gap-2"
+                        >
+                            RESUME <span className="material-icons">description</span>
+                        </button>
+
                         <a
                             href="https://www.linkedin.com/in/mahbubur-r/"
                             target="_blank"
@@ -77,30 +88,6 @@ export default function Hero() {
                         >
                             <FaGithub size={22} />
                         </a>
-                        <div className="relative group">
-                            <a
-                                href="https://drive.google.com/file/d/10THuNBo89PWMUysyLDzF5Q22yFoxSuy5/view?usp=drive_link"
-                                download
-                                className="w-14 h-14 bg-teal-500 text-white rounded-full shadow-lg 
-               hover:bg-teal-600 hover:scale-110 transition-all duration-300 
-               flex items-center justify-center"
-                                aria-label="Download CV"
-                            >
-                                <span className="material-icons text-2xl">description</span>
-                            </a>
-
-                            {/* Hover Text */}
-                            <span
-                                className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2
-               px-3 py-1 text-sm text-white bg-black rounded-md
-               opacity-0 group-hover:opacity-100
-               transition-opacity duration-300 whitespace-nowrap"
-                            >
-                                Resume
-                            </span>
-                        </div>
-
-
                     </div>
                 </div>
             </motion.div>
@@ -144,6 +131,8 @@ export default function Hero() {
                     </motion.div>
                 </div>
             </motion.div>
+
+            <ResumeModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </section>
     );
 }

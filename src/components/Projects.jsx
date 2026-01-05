@@ -79,7 +79,7 @@ export default function Projects() {
                                         >
                                             <FaGithub />
                                         </a>
-                                        {project.serverRepo !== "#" && (
+                                        {/* {project.serverRepo !== "#" && (
                                             <a
                                                 href={project.serverRepo}
                                                 className="p-3 bg-gray-800 rounded-full text-white hover:bg-primary hover:text-gray-900 transition-colors"
@@ -87,7 +87,7 @@ export default function Projects() {
                                             >
                                                 <FaGithub />
                                             </a>
-                                        )}
+                                        )} */}
                                     </div>
                                 </div>
 
@@ -101,7 +101,7 @@ export default function Projects() {
 
                                     <div className="mb-6">
                                         <Link href={`/projects/${project.id}`} className="w-full block text-center py-2 px-4 bg-primary text-gray-900 font-bold rounded-lg hover:bg-opacity-90 transition-all duration-300">
-                                            View More / Details
+                                            View Details
                                         </Link>
                                     </div>
 
